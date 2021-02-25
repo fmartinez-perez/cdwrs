@@ -31,7 +31,7 @@ public class PrinterTest {
             if (c > 109 && c <= 122)
                 cnt++;
         }
-        return String.valueOf(cnt) + "/" + String.valueOf(l);
+        return cnt + "/" + l;
     }
     // ---------------------------
     @Test

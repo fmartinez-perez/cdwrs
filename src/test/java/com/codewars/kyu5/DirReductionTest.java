@@ -57,11 +57,11 @@ public class DirReductionTest {
             } else
                 i++;
         } while (i < directions.size() - 1);
-        return directions.stream().toArray(String[]::new);
+        return directions.toArray(String[]::new);
     }
 
     @Test
-    public void testRandomDirReduc() throws Exception {
+    public void testRandomDirReduc()  {
         String[] u10 = randDir(10);
         assertArrayEquals(doDirReduc(u10), DirReduction.dirReduc(u10), "random 10 directions");
         String[] u15 = randDir(15);

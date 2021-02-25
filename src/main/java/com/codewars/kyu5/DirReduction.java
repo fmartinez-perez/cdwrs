@@ -57,7 +57,7 @@ public class DirReduction {
     private static final String WEST = "WEST";
 
     public static String[] dirReduc(String[] arr) {
-        ArrayList<String> directions = new ArrayList(Arrays.asList(arr));
+        ArrayList<String> directions = new ArrayList<>(Arrays.asList(arr));
 
         int i = 0;
         while(i < directions.size() - 1 && directions.size()>1){

@@ -15,7 +15,7 @@ import java.util.Arrays;
  */
 public class HighScoreWord {
     public static String high(String s) {
-        return Arrays.asList(s.split(" ")).stream().sorted(
+        return Arrays.stream(s.split(" ")).sorted(
                 (s1, s2) ->
                         s1.chars().map(a -> (int)a-96).sum() <= s2.chars().map(a -> (int)a-96).sum() ? 1:-1
         ).findFirst().get();

@@ -1,6 +1,5 @@
 package com.codewars.kyu4;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -8,7 +7,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class RomanNumeralsTest {
     @Test
-    public void testToRoman() throws Exception {
+    public void testToRoman()  {
         assertThat("1 converts to 'I'", RomanNumerals.toRoman(1), is("I"));
         assertThat("2 converts to 'II'", RomanNumerals.toRoman(2), is("II"));
         assertThat("4 converts to 'IV'", RomanNumerals.toRoman(4), is("IV"));
@@ -23,7 +22,7 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void testFromRoman() throws Exception {
+    public void testFromRoman()  {
         assertThat("'I' converts to 1", RomanNumerals.fromRoman("I"), is(1));
         assertThat("'II' converts to 2", RomanNumerals.fromRoman("II"), is(2));
         assertThat("'IV' converts to 4", RomanNumerals.fromRoman("IV"), is(4));
