@@ -1,4 +1,6 @@
 *.class
 /target/*
 /.idea/sonarlint/*
-
+sonar-project.properties
+/.idea/*
+/.scannerwork/*
