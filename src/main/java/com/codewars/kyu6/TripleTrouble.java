@@ -24,6 +24,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TripleTrouble {
+
+    private TripleTrouble(){}
+
     public static int tripleDouble(long num1, long num2)
     {
         String triple = findTriple(num1);

@@ -5,6 +5,9 @@ package com.codewars.kyu8;
  */
 
 public class YesOrNo {
+
+    private YesOrNo(){}
+
     public static String boolToWord(boolean b){
         return b ? "Yes" : "No";
     }

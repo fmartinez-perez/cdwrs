@@ -14,6 +14,9 @@ import java.util.Arrays;
  * Should return: 160 (the only even number)
  */
 public class FindOutlier {
+
+    private FindOutlier(){}
+
     static int find(int[] integers){
         if ( Arrays.stream(integers).filter(num-> num%2==0).count() > 1){
             return  Arrays.stream(integers).filter(num-> num%2!=0).findFirst().getAsInt();

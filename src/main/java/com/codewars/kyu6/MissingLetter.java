@@ -22,7 +22,10 @@ package com.codewars.kyu6;
     I have also created other katas. Take a look if you enjoyed this kata!
  */
 public class MissingLetter {
+
+    private MissingLetter(){}
+
     public static char findMissingLetter(char[] array){
-        return (char)(new String(array).chars().reduce((a,b)-> (int)a+1 != (int)b ? a : b).getAsInt()+1);
+        return (char)(new String(array).chars().reduce((a,b)-> a+1 != b ? a : b).getAsInt()+1);
     }
 }

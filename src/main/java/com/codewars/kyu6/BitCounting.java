@@ -6,6 +6,9 @@ package com.codewars.kyu6;
     Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
  */
 public class BitCounting {
+
+    private BitCounting(){}
+
     public static int countBits(int n){
         //49 is the value for 1
         return (int)Integer.toBinaryString(n).chars().filter(a -> a==49).count();

@@ -6,6 +6,9 @@ package com.codewars.kyu7;
  * The input string will only consist of lower case letters and/or spaces.
  */
 public class Vowels {
+
+    private Vowels(){}
+
     public static int getCount(String str) {
         int vowelsCount = 0;
         for(char c : str.toCharArray()){

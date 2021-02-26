@@ -18,6 +18,9 @@ package com.codewars.kyu6;
  */
 
 public class Prime {
+
+    private Prime(){}
+
     public static boolean isPrime(int num) {
         if (num < 2){
             return false;

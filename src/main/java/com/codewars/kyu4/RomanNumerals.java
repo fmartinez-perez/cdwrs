@@ -31,6 +31,8 @@ package com.codewars.kyu4;
 
 public class RomanNumerals {
 
+    private RomanNumerals(){}
+
     public static String toRoman(int n) {
         StringBuilder romanNumber = new StringBuilder();
 

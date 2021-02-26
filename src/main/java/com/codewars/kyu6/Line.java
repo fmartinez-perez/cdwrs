@@ -24,7 +24,9 @@ public class Line {
 
     private static ArrayList<Integer> changes;
 
-    public static String Tickets(int[] peopleInLine){
+    private Line(){}
+
+    public static String tickets(int[] peopleInLine){
         changes = new ArrayList<>();
 
         for(int paid:peopleInLine){

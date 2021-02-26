@@ -14,6 +14,9 @@ import java.util.Arrays;
     All letters will be lowercase and all inputs will be valid.
  */
 public class HighScoreWord {
+
+    private HighScoreWord(){}
+
     public static String high(String s) {
         return Arrays.stream(s.split(" ")).sorted(
                 (s1, s2) ->

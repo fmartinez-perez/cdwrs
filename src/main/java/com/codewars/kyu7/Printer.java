@@ -13,6 +13,8 @@ package com.codewars.kyu7;
 public class Printer {
     static final int M_VALUE = Character.getNumericValue('m');
 
+    private Printer(){}
+
     public static String printerError(String s) {
         return s.chars().filter(ch -> Character.getNumericValue(ch) > M_VALUE).count() +  "/" + s.length();
     }
